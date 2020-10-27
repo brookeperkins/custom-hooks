@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueenItem component renders the QueenItem component 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      alt="Trixie Mattel"
+      src="trixie.jpg"
+    />
+    <figcaption>
+      Trixie Mattel
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
