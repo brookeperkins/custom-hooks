@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 
-export const getQueens = async() => {
-  const res = await fetch('http://www.nokeynoshade.party/api/queens?limit=10');
+export const getQueens = async(page = 1) => {
+  const res = await fetch(`http://www.nokeynoshade.party/api/queens/all?page=${page}`);
   const json = await res.json();
 
   if(!res.ok) throw 'Unable to fetch';
