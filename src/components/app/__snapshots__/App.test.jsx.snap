@@ -1,17 +1,19 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`App component renders App 1`] = `
-<DocumentFragment>
-  <button
-    disabled=""
-  >
-    BACK
-  </button>
-  <button>
-    FORWARD
-  </button>
-  <h1>
-    Loading...
-  </h1>
-</DocumentFragment>
-`;
+@@ -1,6 +1,18 @@
+      <DocumentFragment>
+    +   <header
+    +     id="header"
+    +   >
+    +     <h1>
+    +       NoKey NoShade
+    +     </h1>
+    +     <a
+    +       href="/"
+    +     >
+    +       Home
+    +     </a>
+    +   </header>
+        <button
+          disabled=""
+        >
+          BACK
+        </button>
