@@ -1,12 +1,12 @@
 /* eslint-disable max-len */
 
 export const getQueens = async(page = 1) => {
-  const res = await fetch(`http://www.nokeynoshade.party/api/queens/all?page=${page}`);
+  const res = await fetch(`http://www.nokeynoshade.party/api/queens?limit=10&${page === 1 ? '' : `offset=${(page - 1) * 10}`}`);
   const json = await res.json();
 
   if(!res.ok) throw 'Unable to fetch';
 
-  return json.results.map(queen => ({
+  return json.map(queen => ({
     id: queen.id,
     name: queen.name,
     imageUrl: queen.image_url,

@@ -2,8 +2,16 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
+  <button
+    disabled=""
+  >
+    BACK
+  </button>
+  <button>
+    FORWARD
+  </button>
   <h1>
-    Hello Squirrel
+    Loading...
   </h1>
 </DocumentFragment>
 `;

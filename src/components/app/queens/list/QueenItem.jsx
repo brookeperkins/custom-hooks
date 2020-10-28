@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const QueenItem = ({ name, image_url }) => (
+const QueenItem = ({ name, imageUrl }) => (
   <figure>
-    <img src={image_url} alt={name} />
+    <img src={imageUrl} alt={name} />
     <figcaption>{name}</figcaption>
   </figure>
 );
 
 QueenItem.propTypes = {
   name: PropTypes.string.isRequired,
-  image_url: PropTypes.string
+  imageUrl: PropTypes.string
 };
 
 export default QueenItem;

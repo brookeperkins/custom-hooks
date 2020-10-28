@@ -11,7 +11,7 @@ describe('QueenDetail component', () => {
     getQueenById.mockResolvedValue({
       id: 89,
       name: 'Trixie Mattel',
-      image_url: 'trixie.jpg',
+      imageUrl: 'trixie.jpg',
       quote: 'Okay, calm down there public school.'
     });
     render(<MemoryRouter initialEntries={['/queen/89']}>

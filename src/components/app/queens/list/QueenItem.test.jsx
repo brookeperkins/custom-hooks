@@ -7,7 +7,7 @@ describe('QueenItem component', () => {
   it('renders the QueenItem component', () => {
     const { asFragment } = render(<QueenItem
       name="Trixie Mattel"
-      image_url="trixie.jpg" />);
+      imageUrl="trixie.jpg" />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

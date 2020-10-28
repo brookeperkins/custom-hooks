@@ -9,7 +9,7 @@ jest.mock('../../../../services/rupaulApi.js');
 describe('QueenList component', () => {
   it('renders the QueenList component after load', async() => {
     getQueens.mockResolvedValue([
-      { id: 89, name: 'Trixie Mattel', image_url: 'trixie.png' }
+      { id: 89, name: 'Trixie Mattel', imageUrl: 'trixie.png' }
     ]);
     render(<MemoryRouter>
       <QueenList />
